@@ -1,0 +1,92 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body ng-app> -->
+	<!-- <div ng-init='cities=[
+	{"name":"Dnipro"},
+	{"name":"Kyiv"},
+	{"name":"Odesa"},
+	{"name":"Lviv"}
+	]'>
+		
+	</div>
+	<li ng-repeat="city in cities">
+		{{ city.name }}
+	</li> -->
+
+
+	<!-- <div ng-init='names=["Artem", "Artem", "Artem"]'><ul>
+		<li ng-repeat="x in names">
+			{{x}}
+		</li>
+	</ul>		
+	</div> -->
+	
+
+
+
+
+
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="city.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+</head>
+<body ng-app="cityApp">
+    <script type="text/ng-template" id="index.html">
+        <h2> Phone: {{phone.name}} </h2>
+        <p>Released: {{phone.released}}</p>
+        <p>Display: {{phone.display}}</p>
+        <p>CPU: {{phone.CPU}}</p>
+        <p>Battery: {{phone.battery}}</p>
+        <p>Main camera: {{phone.maincamera}}</p>
+        <p>Front camera: {{phone.frontcamera}}</p>
+        <p>OS: {{phone.os}}</p> 
+        <p>Price: {{phone.price}}</p> 
+    </script>
+    <div class="header">
+    	<h1>Gadget comparison</h1>  
+    </div>
+    <div class="head">
+    	<h3>Порівняння гаджетів</h3>
+    </div>
+     
+    
+    <ul>
+    	<li><a href="#!/ten">Iphone X</a></li>
+    	<li><a href="#!/eleven">Iphone 11</a></li>
+    	<li><a href="#!/twelve">Iphone 12</a></li>
+    	<li><a href="#!/thirteen">Iphone 13</a></li>
+    	<li><a href="#!/fourteen">Iphone 14</a></li>   	
+    </ul>
+    <div class="phone-container">
+    	<div class="phone-view" ng-view></div>
+    </div>
+    <script src="city.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</body>
+</html>
